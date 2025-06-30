@@ -10,7 +10,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h3>📚 Fandom Tales</h3>
+                <h3> Fandom Tales</h3>
             </div>
             <div class="nav-links">
                 <ul>
@@ -51,17 +51,17 @@
                 
                 <div class="input-group">
                     <label for="password">Mot de passe</label>
-                    <input type="password" name="password" id="password" placeholder="Mot de passe sécurisé" required>
+                    <input type="password" name="password" id="password" placeholder="Votre mot de passe" required>
                 </div>
                 
                 <div class="input-group">
                     <label for="confirm_password">Confirmer le mot de passe</label>
-                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirmez votre mot de passe" required>
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirmation de votre mot de passe" required>
                 </div>
                 
                 <div class="input-group">
                     <label for="bio">Bio (optionnelle)</label>
-                    <textarea name="bio" id="bio" rows="3" placeholder="Parlez-nous de vous et de vos fandoms préférés..."></textarea>
+                    <textarea name="bio" id="bio" rows="3" placeholder="Parlez-nous de vous, vos fandoms et vos OTP !"></textarea>
                 </div>
                 
                 <button type="submit" class="submit-btn">Créer mon compte</button>
