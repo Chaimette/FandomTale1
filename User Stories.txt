@@ -1,0 +1,38 @@
+/////////// FANDOM TALES USER STORIES //////////////
+
+En tant que user non connecté, je peux:
+Me connecter
+Récupérer mon mot de passe
+M'inscrire
+Accéder à la bibliothèque de stories
+Chercher une story par titre/mots-clés(/tags)
+Lire une story
+Contacter les admins
+/* Laisser un commentaire invité */
+
+
+En tant que user connecté je peux:
+Me déconnecter
+Modifier mon profil
+Ajouter une story en favori
+Créer une liste de lecture
+Commenter une story
+M'abonner à une story et/ou un auteur (mailing) /!\ A AJOUTER SUR BDD
+Poster une story
+Modifier une story
+Supprimer une story
+Répondre à des commentaires
+Créer des tags
+
+
+En tant qu'administrateur, je peux:
+Avoir la liste de tous les utilisateurs
+Supprimer un utilisateur
+Supprimer une story (mailing user)
+Créer des tags
+Supprimer des tags
+Modifier le règlement
+
+
+
+
