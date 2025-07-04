@@ -1,48 +1,17 @@
 <?php
+
 namespace Models;
+
+use Models\ConnectionModel;
 use \PDO;
-use \PDOStatement;
-use \PDOException;
 
-abstract class AbstractModel {
-protected PDO $pdo;
-/**
- * Retourne une instance de connexion PDO pour se connecter à la BDD "blog"
- *
- * @return \PDO
- */
-function connexionPDO(): \PDO
+
+abstract class AbstractModel
 {
-    // Pour plus de détail, voir le cours "00-database.php"
- /*    try
+    protected PDO $pdo;
+    public function __construct()
     {
-        $config = require __DIR__."/../config/config.php";
-        $dsn = "mysql:host={$config['host']};port={$config['port']};dbname={$config['dbname']};charset={$config['charset']}";
-        $pdo = new \PDO($dsn, $config["user"], $config["password"], $config["options"]);
-        return $pdo;
+        $this->pdo = ConnectionModel::connexionPDO();
+        $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_CLASS);
     }
-    catch(\PDOException $e)
-    {
-        throw new \PDOException($e->getMessage(), (int)$e->getCode());
-    } */
-
-     
- 
-
-try {
-   $dsn = "mysql:host=db;dbname={$_ENV['MYSQL_DATABASE']};charset=utf8mb4";
-$options = [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-];
-    $pdo = new \PDO($dsn, $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $options);
-    return $pdo;
-} catch (\PDOException $e) {
-    throw new \PDOException("Erreur de connexion : " . $e->getMessage()."<br>". "Code Exception : ". (int)$e->getCode());
 }
-    
-}
-
-
-}
-
