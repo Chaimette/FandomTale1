@@ -18,7 +18,7 @@ class UserModel extends AbstractModel
      * @param string $email
      * @return array|null
      */
-    public function getUserByMail(string $email): ?array
+    public function getUserByEmail(string $email): ?array
     {
         $query = "SELECT * FROM " . self::TABLE . " WHERE email = :email";
         $stmt = $this->pdo->prepare($query);
