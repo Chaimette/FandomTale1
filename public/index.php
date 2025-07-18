@@ -73,8 +73,6 @@
         </div>
     </main>
     
-    <footer>
-        <p>&copy; 2024 Fandom Tales - Plateforme de fanfictions</p>
-    </footer>
+   
 </body>
 </html>

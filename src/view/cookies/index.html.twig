@@ -1,0 +1,32 @@
+{% block stylesheet %}
+<link rel="stylesheet" href="/assets/css/_cookies.css" />
+{% endblock %} {% block content %}
+<div id="cookieConsentModal" class="cookie-modal">
+    <div class="cookie-modal-content">
+        <div class="cookie-header">
+            <img
+                src="/assets/images/cookie_icon.png"
+                alt="Cookies Icon"
+                class="cookie-icon"
+            />
+            <h2>Un cookie, ça vous dit ?</h2>
+        </div>
+        <p class="cookie-text">
+            Ce site utilise des cookies pour vous offrir une meilleure
+            expérience de navigation. En utilisant notre site, vous acceptez
+            l'utilisation de cookies.
+        </p>
+        <div class="cookie-buttons">
+            <button id="acceptCookiesBtn" class="cookie-btn accept">
+                Accepter
+            </button>
+            <button id="declineCookiesBtn" class="cookie-btn learn-more">
+                Refuser
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %} {% block javascript %}
+
+<script src="/assets/js/cookiesModal.js"></script>
+{% endblock %}

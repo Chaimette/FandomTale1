@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% block title %}
+Welcome To Fandom Tales    
+    {% endblock %}
+    </title>
+    {% block stylesheet %} {% endblock %}
+    {% block script %} {% endblock %}
+</head>
+<body>
+    {% block header %}
+    <header>
+        <nav>
+            <div class="logo">
+                <h3> Fandom Tales</h3>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="stories.php">Histoires</a></li>
+                    <li><a href="login.php">Connexion</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {% endblock %}
+
+    {% block content %}
+    <main>
+        <p>Bienvenue sur Fandom Tales.</p>
+        <p>Créez, partagez, explorez les univers qui vous passionnent!</p>
+    </main>
+    {% endblock %}
+
+    {% block footer %}
+    
+    {% endblock %}
+</body>
+</html>
